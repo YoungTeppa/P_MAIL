@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class EmailService {
   constructor(private http: HttpClient) {}
 
-  getEmails(page: number = 0, perPage: number = 10, folder: string = 'INBOX') {
+  getEmails(page: number = 0, perPage: number = 2, folder: string = 'INBOX') {
     return this.http.get<any>('http://localhost:3000/get-emails', {
       params: {
         page: page.toString(),
