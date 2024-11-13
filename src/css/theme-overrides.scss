@@ -31,7 +31,8 @@
 
 .ql-editor::before {
   opacity: 0.5;
-  color: white !important;
+  color: #000 !important;
+  // color: white !important;
 }
 
 .p-paginator {
@@ -60,7 +61,7 @@
   }
 
   input {
-    border: 1px solid var(--border-color-1);
+    border: 2px solid var(--border-color-1);
     background-color: transparent;
     border-radius: 0.5rem;
   }
@@ -76,7 +77,7 @@
   }
 
   .p-editor-content {
-    border: 1px solid var(--border-color-1);
+    border: 1px solid var(--border-color-2);
     background-color: transparent;
     border-radius: 0 0 0.5rem 0.5rem;
 

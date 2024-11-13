@@ -11,8 +11,23 @@ import {
   faSignOutAlt,
   faSync,
   faTimes,
+  faTrashCan,
   faTrash,
   faTrashRestore,
+  faPlus,
+  faEnvelope,
+  faEnvelopeSquare,
+  faStar,
+  faRectangleList,
+  faPenToSquare,
+  faCircleExclamation,
+  faGear,
+  faSearch,
+  faListCheck,
+  faTableList,
+  faListUl,
+  faBars,
+  faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { EmailService } from './services/email.service';
 import { finalize, delay, BehaviorSubject } from 'rxjs';
@@ -50,10 +65,12 @@ export class AppComponent {
   @ViewChild('editor') editor: any;
 
   // Icons
+  faBars=faBars;
   faInbox = faInbox;
   faPaperPlane = faPaperPlane;
   faReply = faReply;
   faTimes = faTimes;
+  faTrashCan = faTrashCan;
   faTrash = faTrash;
   faSync = faSync;
   faPen = faPen;
@@ -63,7 +80,21 @@ export class AppComponent {
   faExclamationTriangle = faExclamationTriangle;
   faTrashRestore = faTrashRestore;
   faSignOutAlt = faSignOutAlt;
-
+  faPlus=faPlus;
+  faEnvelope=faEnvelope;
+  faEnvelopeSquare=faEnvelopeSquare;
+  faStar=faStar;
+  faRectangleList=faRectangleList;
+  faPenToSquare=faPenToSquare;
+  faCircleExclamation=faCircleExclamation;
+  faGear=faGear;
+  faSearch=faSearch;
+  faListCheck=faListCheck;
+  faTableList=faTableList;
+  faListUl=faListUl;
+  faAngleRight=faAngleRight;
+//image
+  imageUrl = 'assets/images/PyramidMail.svg';
   // Are the messages loading?
   loading: boolean = true;
 
